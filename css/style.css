@@ -68,6 +68,22 @@ p{
     padding: 0.8rem 1rem;
 
 }
+.btngreen
+{
+    background-color: green;
+    border:1px solid darkgreen;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+.btnred
+{
+    background-color: red;
+    border:1px solid darkred;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
 
 .columns-2 {
     display: grid;
@@ -98,6 +114,24 @@ p{
 
 .header {
     background-color: var(--HeaderBackground);
+}
+.container
+{
+    max-width: 1100px;
+    padding-left: 15px;
+    margin: auto;
+    padding-right: 15px;
+}
+.table
+{
+    width: 100%;
+    border: 1px solid #2A2D34;
+    border-collapse: collapse;
+}
+.table td,.table th{
+    border: 1px solid #2A2D34;
+    padding: 3px;
+
 }
 
 .margin-top-down{
@@ -507,7 +541,7 @@ tr {
     padding: 7% 8%;
 }
 
-input[type="text"], #password, textarea {
+input[type="text"],input[type="email"],input[type="password"], #password, textarea,select {
     border: none;
     border-radius: 2px;
     background: darkgray;
@@ -515,10 +549,11 @@ input[type="text"], #password, textarea {
     min-height: 38px;
     width: 100%;
     outline: none;
-    margin-top: 21px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,input[type="email"],input[type="password"] textarea,select:focus {
     background: white;
     color: black;
 }
@@ -621,6 +656,10 @@ textarea {
         padding: 5em 5em;
     }
 
+    .form-outer {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 8% 10%;
+    }
     .inner-col {
         padding: 3em;
     }
