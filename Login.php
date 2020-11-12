@@ -60,8 +60,9 @@ include_once "header.php";
     </div>
 
 </section>
-<?php
-include_once "footer.php";
+
+<br>
+<?php include "footer.php"; ?>
 ?>
 </body>
 </html>
