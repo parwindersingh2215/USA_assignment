@@ -8,20 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>About us</title>
-    <style>
-        #content-body {
-            padding: 10px 0;
-        }
-
-        .row {
-            display: inline-flex;
-            width: 100%;
-        }
-
-        .col-5 {
-            width: 50%;
-        }
-    </style>
+    <?php include 'headerfiles.php'?>
 </head>
 <body>
 <nav class="navbar header-top">
@@ -70,33 +57,6 @@
     </div>
     <div style="text-align: center"><a href="" class="btn about-btn btn-transparent">Learn more</a></div>
 </section>
-
-<footer>
-    <div class="row" style="margin-bottom: -80px">
-        <div style="width: 40%">
-            <a class="footer-title" style="color: white;text-decoration: none;margin-top: 10px" href="index.php">Volunteer
-                Management System</a>
-        </div>
-        <div style="width: 60%">
-            <ul>
-                <li><a href="AboutUs.php">About us</a></li>
-                <li><a href="features.php">Services</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="gallery.php">Gallery</a></li>
-                <li><a href="Testimonials.php">Testimonials</a></li>
-                <li><a href="contact.php">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-    <hr>
-    <div class="row" style="margin-top: 20px">
-        <div class="col-5">
-            <a class="" href="#" style="color: white;text-decoration: none">&#169; Created by Student</a>
-        </div>
-        <div class="col-5" style="text-align: end;">
-            <a class="" href="#" style="color: white;text-decoration: none">All right Reserved</a>
-        </div>
-    </div>
-</footer>
+<?php include "footer.php"; ?>
 </body>
 </html>
