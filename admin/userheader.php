@@ -1,3 +1,10 @@
+<?php
+if(!isset($_SESSION["data"]))
+{
+    header("location:index.php");
+    exit();
+}
+?>
 <nav class="navbar header-top">
     <ul>
         <!--    <ul>-->
@@ -19,6 +26,6 @@
         <li><a href="../gallery.php">Gallery</a></li>
         <li><a href="../contact.php">Contact</a></li>
         <li><a href="../Testimonials.php">Testimonials</a></li>
-        <li><a href="../Login.php" class="btn btn-success">Login/Register</a></li>
+        <li><a href="logout.php" class="btn btn-success">logout</a></li>
     </ul>
 </nav>

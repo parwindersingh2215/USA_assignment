@@ -5,6 +5,20 @@ body {
     margin: 0;
 }
 
+.errormsg {
+    padding: 15px;
+    color: red;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.successmsg {
+    padding: 15px;
+    color: green;
+    border: 1px solid green;
+    text-align: center;
+}
+
 .navbar {
     position: relative;
     display: flex;
@@ -14,18 +28,37 @@ body {
     padding: 0.8rem 1rem;
 
 }
-.btngreen
-{
+
+.clear-fix {
+    clear: both;
+    margin-bottom: 5px;
+}
+
+.table form{
+    display: inline-block;
+}
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+.btngreen {
     background-color: green;
-    border:1px solid darkgreen;
+    border: 1px solid darkgreen;
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
 }
-.btnred
-{
+
+.btnred {
     background-color: red;
-    border:1px solid darkred;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+}
+.btnorange {
+    background-color: orange;
+    border: 1px solid orangered;
     border-radius: 5px;
     color: white;
     padding: 5px 10px;
@@ -60,20 +93,21 @@ body {
     /*padding: 2em;*/
     background-color: #8458B3;
 }
-.container
-{
+
+.container {
     max-width: 1100px;
     padding-left: 15px;
     margin: auto;
     padding-right: 15px;
 }
-.table
-{
+
+.table {
     width: 100%;
     border: 1px solid #2A2D34;
     border-collapse: collapse;
 }
-.table td,.table th{
+
+.table td, .table th {
     border: 1px solid #2A2D34;
     padding: 3px;
 
@@ -92,6 +126,7 @@ body {
         grid-template-columns: 2fr;
         grid-gap: 1em;
     }
+
     .columns-2-r {
         padding-right: 5px;
     }
@@ -378,7 +413,7 @@ tr {
     padding: 5% 10%;
 }
 
-input[type="text"],input[type="email"],input[type="password"], #password, textarea,select {
+input[type="text"], input[type="email"], input[type="password"], #password, textarea, select {
     border: none;
     border-radius: 2px;
     background: darkgray;
@@ -390,7 +425,7 @@ input[type="text"],input[type="email"],input[type="password"], #password, textar
     margin-bottom: 15px;
 }
 
-input[type="text"]:focus,input[type="email"],input[type="password"] textarea,select:focus {
+input[type="text"]:focus, input[type="email"], input[type="password"] textarea, select:focus {
     background: white;
     color: black;
 }
@@ -500,6 +535,7 @@ textarea {
         background: rgba(0, 0, 0, 0.2);
         padding: 8% 10%;
     }
+
     .inner-col {
         padding: 3em;
     }

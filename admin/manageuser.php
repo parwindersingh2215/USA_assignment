@@ -12,9 +12,9 @@ if (isset($_POST['btndel'])) {
     $userid = $_POST["userid"];
     $query = "delete from users where id=$userid";
     if (mysqli_query($conn, $query)) {
-        $message = "User Deleted Successfully";
+        $message = "<div class='successmsg'>User Deleted Successfully</div>";
     } else {
-        $error = "unable to delete";
+        $error = "<div class='errormsg'>unable to delete</div>";
     }
 }
 
@@ -45,6 +45,7 @@ include_once "userheader.php";
         echo $message;
     }
     ?>
+    <div class="clear-fix"></div>
 
     <table class="table">
         <thead>
@@ -53,6 +54,8 @@ include_once "userheader.php";
             <th>Email</th>
             <th>Name</th>
             <th>Role</th>
+            <th>Department</th>
+            <th colspan="2"></th>
         </tr>
         </thead>
         <tbody>
@@ -68,16 +71,23 @@ include_once "userheader.php";
                 <td><?php echo $row['emailid']; ?></td>
                 <td><?php echo $row['name']; ?></td>
                 <td><?php echo $row['role']; ?></td>
+                <td><?php echo $row['department']; ?></td>
                 <td>
                     <form onsubmit="return confirm('Are you sure to delete ?')" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                         <input type="hidden" value="<?php echo $row['id']; ?>" name="userid" id="userid">
                         <input type="hidden" name="action" value="delete">
                         <input type="submit" class="btnred" value="Delete" name="btndel" id="btndel">
                     </form>
+
+                    <form action="edituser.php">
+                        <input type="hidden" value="<?php echo $row['id']; ?>" name="userid" id="userid">
+                        <input type="submit" class="btnorange" value="Edit" name="btnedit" id="btnedit">
+                    </form>
                 </td>
             </tr>
 
             <?php
+            $srno ++;
         }
         ?>
         </tbody>
