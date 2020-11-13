@@ -8,7 +8,20 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>About us</title>
-    <?php include 'headerfiles.php'?>
+    <style>
+        #content-body {
+            padding: 10px 0;
+        }
+
+        .row {
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .col-5 {
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar header-top">
