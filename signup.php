@@ -51,22 +51,8 @@
         <label for="name">Name</label>
         <input type="text" id="name" name="name" placeholder="Full Name">
 
-
-        <label for="department" style="margin-top: 10px">Department</label>
-        <select name="department" id="department">
-            <option value="">Select Department</option>
-            <option value="Computer Science">Arts & Social Sciences</option>
-            <option value="Economics & Business">Economics & Business</option>
-            <option value="Engineering & Technology">Engineering & Technology</option>
-            <option value="Life Sciences">Life Sciences</option>
-            <option value="Physical Education">Physical Education</option>
-            <option value="Visual Art & Performing Arts">Visual Art & Performing Arts</option>
-            <option value="AGRICULTURE & FORESTRY">AGRICULTURE & FORESTRY</option>
-        </select>
-
-
-        <label for="areaofintrest">Area of Interest</label>
-        <input type="text" id="areaofintrest" name="areaofintrest" placeholder="Interest">
+        <label for="file">Resume</label>
+        <input type="file" id="file" name="file" required>
         <div class="align-center">
             <input type="button" value="Submit" id="submit" class="btn btn-success">
         </div>

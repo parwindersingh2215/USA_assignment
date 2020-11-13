@@ -115,13 +115,10 @@ p{
 .header {
     background-color: var(--HeaderBackground);
 }
-/*.container*/
-/*{*/
-/*    max-width: 1100px;*/
-/*    padding-left: 15px;*/
-/*    margin: auto;*/
-/*    padding-right: 15px;*/
-/*}*/
+
+.table-responisive{
+    overflow-x: auto;
+}
 .table
 {
     width: 100%;
@@ -541,11 +538,10 @@ tr {
     padding: 7% 8%;
 }
 
-input[type="text"],input[type="email"],input[type="password"],#email, #password,#password2, textarea,select {
+input[type="text"],input[type="email"],input[type="password"],#file,#email, #password,#password2, textarea,select {
     border: none;
     border-radius: 2px;
     background: darkgray;
-    /*padding: 12px;*/
     min-height: 38px;
     width: 100%;
     outline: none;
