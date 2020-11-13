@@ -115,7 +115,7 @@ include_once "userheader.php";
                     <label for="department" style="margin-top: 10px"><b>Department</b></label>
                     <select name="department" id="department" >
                         <option value="">Select Department</option>
-                        <option value="Computer Science">Arts & Social Sciences</option>
+                        <option value="Arts & Social Sciences">Arts & Social Sciences</option>
                         <option value="Economics & Business">Economics & Business</option>
                         <option value="Engineering & Technology">Engineering & Technology</option>
                         <option value="Life Sciences">Life Sciences</option>
